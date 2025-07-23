@@ -15,8 +15,9 @@ import {
   HiViewBoards,
   HiArrowSmRight,
 } from "react-icons/hi";
+import logo from "../../assets/favicon.ico";
 
-export default function SidebarLayout() {
+export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = useRef();
 
@@ -42,7 +43,7 @@ export default function SidebarLayout() {
         onClick={() => setIsOpen(!isOpen)}
         className="m-2 p-3 bg-blue-500 text-white rounded sm:hidden"
       >
-        ☰  
+        ☰
       </button>
 
       <div
@@ -52,8 +53,8 @@ export default function SidebarLayout() {
         }`}
       >
         <FlowSidebar aria-label="Sidebar with logo branding example">
-          <SidebarLogo href="#" img="/favicon.svg" imgAlt="Flowbite logo">
-            Flowbite
+          <SidebarLogo href="#" img={logo} imgAlt="logo">
+            Grocery
           </SidebarLogo>
           <SidebarItems>
             <SidebarItemGroup>
@@ -82,8 +83,6 @@ export default function SidebarLayout() {
           </SidebarItems>
         </FlowSidebar>
       </div>
-
-      
     </>
   );
 }
