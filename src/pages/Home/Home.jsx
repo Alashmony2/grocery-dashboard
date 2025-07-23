@@ -1,5 +1,6 @@
 import StateCard from "../../components/StateCard/StateCard.jsx";
 import SalesChart from "../../components/Charts/SalesChart.jsx";
+import OrdersTable from "../../components/Orders/OrdersTable.jsx";
 
 
 export default function Home() {
@@ -16,6 +17,10 @@ export default function Home() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-2.5">
         <SalesChart />
+      </div>
+
+      <div className="grid grid-cols-1 mt-6">
+        <OrdersTable />
       </div>
     </div>
   );
