@@ -1,30 +1,6 @@
+import orders from "../../Data/ordersData.js";
+
 export default function OrdersTable() {
-  const orders = [
-    {
-      id: 1,
-      customer: "Ahmed Samy",
-      product: "Tomato",
-      status: "Delivered",
-      price: "EGP 30",
-      date: "2025-07-21",
-    },
-    {
-      id: 2,
-      customer: "Sara Hossam",
-      product: "Potato",
-      status: "Shipped",
-      price: "EGP 45",
-      date: "2025-07-20",
-    },
-    {
-      id: 3,
-      customer: "Mona Ali",
-      product: "Milk",
-      status: "Pending",
-      price: "EGP 25",
-      date: "2025-07-18",
-    },
-  ];
 
   const statusColors = {
     Delivered: "bg-green-100 text-green-800",
