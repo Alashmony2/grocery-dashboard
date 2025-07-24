@@ -88,11 +88,8 @@ export default function Sidebar() {
           </div>
           <SidebarItems>
             <SidebarItemGroup>
-              <SidebarItem href="#" icon={HiChartPie}>
+              <SidebarItem href="/" icon={HiChartPie}>
                 Dashboard
-              </SidebarItem>
-              <SidebarItem href="#" icon={HiViewBoards}>
-                Kanban
               </SidebarItem>
               <SidebarItem href="#" icon={HiInbox}>
                 Inbox
