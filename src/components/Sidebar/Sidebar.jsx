@@ -12,7 +12,6 @@ import {
   HiShoppingBag,
   HiTable,
   HiUser,
-  HiViewBoards,
   HiArrowSmRight,
 } from "react-icons/hi";
 import logo from "../../assets/favicon.ico";
@@ -66,7 +65,7 @@ export default function Sidebar() {
         }`}
       >
         <FlowSidebar aria-label="Sidebar with logo branding example" className="bg-white dark:bg-gray-800">
-          <div className="flex items-center justify-between ">
+          <div className="flex items-start justify-between">
             <SidebarLogo href="#" img={logo} imgAlt="logo">
               Grocery
             </SidebarLogo>
